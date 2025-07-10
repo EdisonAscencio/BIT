@@ -1,0 +1,114 @@
+/* Importamos fuentes */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Selecciona los colores y tipografias de la pagina */
+
+:root{
+    /* Colores */
+    --color-Floral-White: #FFF8F1; 
+    --color-Dark-Charcoal: #333333; 
+    --color-Pastel-Orange: #FFB750;
+    --color-Purple-Navy: #545188;
+    --color-Dark-Cornflower-Blue: #254297; 
+    --color-Ocean-Green: #4BBF9E; 
+    --color-Red-Crayola: #F21D44; 
+
+    /* Tipografías */
+    --fuente-encabezado: 'Sour Gummy', sans-serif;
+    --fuente-cuerpo: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.5; 
+    -webkit-text-size-adjust: 100%; 
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    font-family: var(--fuente-cuerpo);
+    font-size: 2.4rem;
+    background-color: var(--color-Floral-White);
+    color: var(--color-Dark-Charcoal);
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ESTILOS PARA EL HEADER */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.4rem 6.4rem;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: flex;
+    gap: 4.8rem;
+}
+
+nav ul a{
+    font-family: var(--fuente-encabezado);
+    color: var(--color-Dark-Charcoal);
+}
+
+/* ESTILOS PARA LA SECCION DEL BANNER PRINCIPAL*/
+
+#inicio{
+    display: flex;
+    background-color: var(--color-Pastel-Orange);
+    background-image: url(../img/VECTOR_1.svg), url(../img/VECTOR_2.svg), url(../img/VECTOR_3.svg);
+    background-position: left, bottom right, top right;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+}
+
+#inicio div{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 24rem;
+    padding: 4rem 0;
+}
+
+#inicio div h1{
+    font-family: var(--fuente-encabezado);
+    color: var(--color-Floral-White);
+    font-size: 6.4rem;
+    font-weight: bold;
+}
+
+#inicio div p{
+    margin: .8rem 0 1.6rem 0;
+}
+
+#inicio div a{
+    font-family: var(--fuente-encabezado);
+    color: var(--color-Purple-Navy);
+    background-color: var(--color-Floral-White);
+    border: .2rem solid var(--color-Purple-Navy);
+    border-radius: 25rem;
+    padding: 1rem 2.4rem;
+    font-weight: 700;
+    width: 26rem;
+}
+
+#inicio img{
+    margin-right: 30rem;
+    position: absolute;
+}
+

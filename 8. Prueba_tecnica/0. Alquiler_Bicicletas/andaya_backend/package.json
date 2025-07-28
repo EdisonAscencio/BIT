@@ -1,0 +1,16 @@
+{
+  "name": "andaya_backend",
+  "version": "1.0.0",
+  "description": "App para alquilar bicicletas",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node  --env-file .env --watch ./src/index.js"
+  },
+  "author": "Edison Steven Ascencio Ospina",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.4"
+  }
+}
